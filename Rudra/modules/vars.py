@@ -21,7 +21,7 @@ class Config(object):
     SESSION_STRING = getenv("SESSION_STRING", None)
     COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", ". ! > *").split())
     USERBOT_PICTURE = getenv("USERBOT_PICTURE", None)
-    LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", 0))
+    LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
     PMPERMIT = getenv("PMPERMIT", "True")
     PERMIT_MSG = getenv("PERMIT_MSG", None)
     PERMIT_LIMIT = int(getenv("PERMIT_LIMIT", 6))
