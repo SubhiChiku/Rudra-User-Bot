@@ -11,7 +11,7 @@ if os.path.exists("Internal"):
 
 class Config(object):
     # REQUIRED VARIABLES
-    API_ID = int(getenv("API_ID", 0))
+    API_ID = int(getenv("API_ID", None))
     API_HASH = getenv("API_HASH", None)
     BOT_TOKEN = getenv("BOT_TOKEN", None)
     STRING_SESSION = getenv("STRING_SESSION", None)
